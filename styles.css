@@ -1,0 +1,184 @@
+/* 2000s Vibes */
+body {
+    background: linear-gradient(to bottom, #ffccff, #ffffcc);
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #333;
+    text-align: center;
+  }
+  
+  header {
+    background-color: #ff99cc;
+    padding: 20px;
+    border-bottom: 4px dashed #ff66aa;
+  }
+  
+  header h1 {
+    font-size: 42px;
+    color: #660066;
+    text-shadow: 2px 2px #fff;
+  }
+  
+  nav a {
+    margin: 0 15px;
+    color: #0000cc;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #ffff99;
+    padding: 5px 10px;
+    border: 2px outset #cccccc;
+  }
+  
+  nav a:hover {
+    background-color: #ffcc00;
+    color: #990000;
+  }
+  
+  marquee {
+    background-color: #ffff99;
+    padding: 10px;
+    font-size: 20px;
+    color: #cc0000;
+    border-top: 2px solid #ff66aa;
+    border-bottom: 2px solid #ff66aa;
+  }
+  
+  .intro {
+    padding: 20px;
+  }
+  
+  .intro img {
+    width: 150px;
+    border: 5px dotted #ff66aa;
+    margin-bottom: 15px;
+  }
+  
+  .recipes {
+    background-color: #ffffff;
+    padding: 30px;
+    border: 4px ridge #ff66aa;
+    margin: 20px;
+  }
+  
+  .recipe-card {
+    display: inline-block;
+    background-color: #ffffcc;
+    padding: 15px;
+    width: 250px;
+    margin: 15px;
+    border: 3px solid #ff99cc;
+    box-shadow: 5px 5px 10px #999;
+  }
+  
+  .recipe-card img {
+    width: 100%;
+    border: 2px solid #cc66cc;
+  }
+  
+  .recipe-card button {
+    background-color: #ff99cc;
+    color: #660066;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 10px;
+    border: 2px outset #cc66cc;
+    cursor: pointer;
+  }
+  
+  .recipe-card button:hover {
+    background-color: #ffccff;
+    color: #990099;
+  }
+  
+  footer {
+    background-color: #ff99cc;
+    padding: 15px;
+    border-top: 4px dashed #ff66aa;
+    font-size: 14px;
+  }
+  
+  footer a {
+    color: #0000cc;
+    text-decoration: underline;
+  }
+  /* Style the contact form */
+.contact-form {
+    background-color: #fefbd8;
+    border: 2px solid #ff99cc;
+    padding: 20px;
+    width: 70%;
+    margin: 20px auto;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form h2 {
+    text-align: center;
+    color: #ff3366;
+  }
+  
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ff66cc;
+    border-radius: 5px;
+  }
+  
+  .contact-form button {
+    background-color: #ff99cc;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+  }
+  
+  .contact-form button:hover {
+    background-color: #ff6699;
+  }
+  /* Glowing effect for the submit button */
+.contact-form button {
+    background-color: #ff99cc;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    box-shadow: 0 0 5px #ff66cc, 0 0 10px #ff66cc, 0 0 15px #ff66cc;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .contact-form button:hover {
+    background-color: #ff6699;
+    box-shadow: 0 0 20px #ff3399, 0 0 30px #ff3399;
+  }
+/* Secret Page Background and Text Styling */
+.secret-page {
+  background-color: black; /* Black background */
+  color: #000000; /* Neon green text */
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  text-align: center;
+  padding-top: 50px;
+  height: 100vh; /* Full height of the screen */
+}
+
+.secret-page h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.secret-page p {
+  font-size: 24px;
+}
+section img {
+  border: 5px solid #ff69b4;
+  border-radius: 15px;
+  box-shadow: 0 0 20px #ff69b4;
+  margin-bottom: 20px;
+}

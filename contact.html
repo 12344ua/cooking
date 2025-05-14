@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Lucy - Lucy's Yummy Recipes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Contact Lucy 🍔🍰</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="recipes.html">Recipes</a>
+      <a href="about.html">About Lucy</a>
+      <a href="contact.html">Contact Lucy</a>
+    </nav>
+  </header>
+
+  <marquee behavior="scroll" direction="left">📝 Get in Touch with Lucy! 📝</marquee>
+
+  <section class="contact-form">
+    <h2>Contact Form 📩</h2>
+    <form id="contact-form" onsubmit="return checkSecretInput(event)">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" placeholder="Your name" required><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" placeholder="Your email" required><br><br>
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" placeholder="Your message here..." rows="5" required></textarea><br><br>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Thank you message -->
+  <div id="thank-you-message" style="display: none; text-align: center; color: #ff3366; font-size: 20px; font-family: 'Comic Sans MS', cursive;">
+    <p>Thank you for your message! 🎉 I will get back to you soon!</p>
+  </div>
+
+  <footer>
+    <p> | <a href="#">Sign my Guestbook</a> | <a href="contact.html">Email Lucy</a> | 
+    <a href="https://www.youtube.com/@Lucycookssweets" target="_blank">Visit My YouTube Channel 🎥</a></p>
+  </footer>
+
+  <script>
+
+    // JavaScript function to show the thank-you message
+    function showThankYouMessage(event) {
+      event.preventDefault();  // Prevents the form from submitting the usual way
+      document.getElementById("contact-form").style.display = "none";  // Hide the form
+      document.getElementById("thank-you-message").style.display = "block";  // Show the thank-you message
+    }
+
+    // Check for secret input (name, email, and message)
+    function checkSecretInput(event) {
+      event.preventDefault();  // Prevents the form from submitting the usual way
+
+      // Get user inputs
+      var name = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+      var message = document.getElementById('message').value;
+
+      // Define the secret input values
+      var secretName = "Secret";
+      var secretEmail = "TheSecret@gmail.com";
+      var secretMessage = "I am ready to find out";
+
+      // If all inputs match the secret values
+      if (name === secretName && email === secretEmail && message === secretMessage) {
+        window.location.href = "secret.html";  // Redirect to secret page
+      } else {
+        showThankYouMessage(event);  // Show regular thank you message if not secret
+      }
+    }
+  </script>
+  <script>
+    console.log("website:C0ns0le_c0de");
+    console.log("The text: I am ready to find out");
+  </script>
+</body>
+</html>
